@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM</title>
+    <link rel="stylesheet" href="./kiosk.css">
+</head>
+<body>
+    <h1 id="title">RANDOM</h1>
+    <h2 id="number">버튼을 눌러주세요</h2>
+    <button id="bunho">랜덤 숫자 생성</button>
+</body>
+<script>
+    min=1; //번호표 최솟값  
+    max=100; //번호표 최댓값
+    function random_number(min, max) { //랜덤 숫자 호출
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    const button=document.getElementById('bunho');
+    button.addEventListener('click', () => {
+        var randomNum=random_number(min,max);
+        document.getElementById('number').innerText=randomNum;
+    });
+</script>
+</html>

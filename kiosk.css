@@ -1,0 +1,33 @@
+body {
+    background-color: #285b41;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#title {
+    color:  #183124;
+    text-align: center;
+    text-shadow: 2px 2px 4px #717171;
+}
+#number {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #717171;
+}
+#bunho {
+    display: block;
+    margin: 16px auto;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+}   
+#bunho:hover {
+    transform: translateX(-1px);
+    box-shadow: 0 10px 22px rgba(22,160,133,0.28);
+}
+#bunho:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(22,160,133,0.22);
+    opacity: 0.95;
+}
